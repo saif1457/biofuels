@@ -8,12 +8,12 @@ from pulp import *
 import numpy as np
 
 #import files from github
-V = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/V.csv') #vehicle types
-F = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/F.csv') #fuel types
-E = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/E.csv') #driving env
-R = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/R.csv') #counties
-M = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/M.csv') #charging stations
-S = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/S.csv') #states
+V = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/V.csv') #vehicle types
+F = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/F.csv') #fuel types
+E = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/E.csv') #driving env
+R = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/R.csv') #counties
+M = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/M.csv') #charging stations
+S = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/S.csv') #states
 
 F['fuel_type'] = F['fuel_type'].apply(lambda x: x.replace('electricity','Electricity'))
 
@@ -24,25 +24,25 @@ COUNTIES = list(R['county'])
 CHARGING_STATIONS = list(M['filling_stations'])
 STATES = list(S['state'])
 
-EF = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/EF(f%2Cs).csv')
+EF = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/EF(f%2Cs).csv')
 EF['fuel_type'] = EF['fuel_type'].apply(lambda x: x.replace('electricity','Electricity'))
-FE = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/FE(v%2Cf).csv')
+FE = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/FE(v%2Cf).csv')
 FE['fuel_type'] = FE['fuel_type'].apply(lambda x: x.replace('electricity','Electricity'))
-C = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/C(F).csv')
-CC = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/CC(v%2Cs).csv') 
+C = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/C(F).csv')
+CC = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/CC(v%2Cs).csv') 
 CC['yearly_cost']=np.where(CC['vehicle_type']=='BEV', CC['cost_minus_rebate']/8.5, CC['cost_minus_rebate']/5.5)
-CG = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/CG(F).csv')
+CG = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/CG(F).csv')
 CG['fuel_type'] = CG['fuel_type'].apply(lambda x: x.replace('electricity','Electricity'))
 # D = 0.25
-TM = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/TM(f%2Cs).csv')
-N = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/N(r).csv')
-B = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/B(r).csv')
+TM = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/TM(f%2Cs).csv')
+N = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/N(r).csv')
+B = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/B(r).csv')
 CF = FE
 CF['fuel_consumption'] = (1 / CF['fuel_economy'])
-T = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/T(r).csv')
+T = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/T(r).csv')
 T['total_vehicles_registered'] = T['total_vehicles_registered'].apply(lambda x: x.replace(',',''))
 T['total_vehicles_registered'] = T['total_vehicles_registered'].apply(pd.to_numeric)
-W_param = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/W_county_param.csv')
+W_param = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/W_county_param.csv')
 e85_vi = pd.read_csv('e85_vi.csv')
 efuels_vi = pd.read_csv('efuels_vi.csv')
 e85_vi = e85_vi[['STATE','NAME','CENSUSAREA','e85_area']]
@@ -320,7 +320,7 @@ Visual['vehicle_pc_BEV'] = (Visual['vehicle_split_BEV']/Visual['total_vehicle_co
 Visual['vehicle_pc_FFV'] = (Visual['vehicle_split_FFV']/Visual['total_vehicle_count']*100).round(1)
 Visual['vehicle_pc_SIDI'] = (Visual['vehicle_split_SIDI']/Visual['total_vehicle_count']*100).round(1)
 
-county_renaming_engine = pd.read_csv('https://raw.githubusercontent.com/saif1457/iems394/master/optimisation_data/county_renaming_engine.csv')
+county_renaming_engine = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/county_renaming_engine.csv')
 Visual = Visual.merge(county_renaming_engine)
 Visual['County'] = Visual['County'].str.replace('_',' ')
 Visual.to_csv('optimisation_data/visual_df.csv')
