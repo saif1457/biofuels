@@ -24,7 +24,7 @@ In order to utilise the Biofuels Model, follow these steps:
 
 1. Git clone this repository using `git clone https://github.com/saif1457/biofuels.git`. This will download the entire repository. Alternatively, use the `Download ZIP file` functionality.
 2. Install all dependencies using pip3 using ` pip3 install -r requirements.txt`. This will import all dependencies required to run the files. 
-3. Spin up the Streamlit application using `streamlit run publish.py`. Streamlit applications allow for UI features to change parameters.
+3. **Spin up the Streamlit application** using `streamlit run publish.py`. Streamlit applications allow for UI features to change parameters.
 4. Run first cells including imports, then change input to parameters as desired, and then run all cells. The notebook will automagically run the following: 
 -  preprocessing (`preprocessing.py` file , runtime ranging from 0.1s to 4 minutes depending on user inputs), 
 - optimisation model (`optimisation.py` file, runtime ~15 seconds),
