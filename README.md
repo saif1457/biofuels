@@ -1,7 +1,7 @@
 ## BioFuels Optimisation Model
 #### Streamlit Visualisation Tool
 
-An online version of this tool (with a GHG reduction target of 25% and a 6 mile radius for each EV/E85 station) is [available here](http://www.saifbhatti.com/iems394).
+An online version of this visualisation (with a GHG reduction target of 25% and a 6 mile radius for each EV/E85 station) is [available here](http://www.saifbhatti.com/iems394).
 
 
 <p align="center">
@@ -11,10 +11,10 @@ An online version of this tool (with a GHG reduction target of 25% and a 6 mile 
 ---------------
 #### IEMS 394 Data Process
 
-##### Overall Data Pipeline
+##### Streamlit Application
 
 <p align="center">
-  <img src="proposal.png" align="center" alt="drawing" width="600"/>
+  <img src="user_options.png" align="center" alt="drawing" width="600"/>
 </p>
 
 
