@@ -17,10 +17,10 @@ st.markdown('### A Study of Transport Emissions in the United States')
 
 
 st.markdown('In order to fully understanding the relevant details behind the entire project, the reader is directed to the previous manuscript:')
-link1 = '[IEMS 394 BioFuels Github](https://github.com/saif1457/iems394)'
+link1 = '[IEMS 394 BioFuels Github](https://github.com/saif1457/biofuels)'
 st.markdown(link1,unsafe_allow_html=True)
 st.markdown('This repository includes the manuscript outlines motivations, considerations and assumptions, as well as clarifying nuance in future developments.')
-link2 = '[IEMS 394 BioFuels Manuscript](https://github.com/saif1457/iems394/blob/master/tex/biofuels.pdf)'
+link2 = '[IEMS 394 BioFuels Manuscript](https://github.com/saif1457/biofuels/blob/master/tex/biofuels.pdf)'
 st.markdown(link2, unsafe_allow_html=True)
 st.markdown('In order to use this tool, please select the parameters in the left hand sidebar. This will set the parameters for this optimisation run.')
 
