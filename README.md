@@ -14,7 +14,7 @@ An online version of this visualisation (with a GHG reduction target of 25% and 
 ##### Streamlit Application
 
 <p align="center">
-  <img src="user_options.png" align="center" alt="drawing" width="600"/>
+  <img src="user_options.png" align="center" alt="drawing" width="1000"/>
 </p>
 
 
