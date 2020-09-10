@@ -1,0 +1,400 @@
+county,state
+Aitkin,MN
+Alameda,CA
+Alpine,CA
+Amador,CA
+Anderson,TX
+Andrews,TX
+Angelina,TX
+Anoka,MN
+Aransas,TX
+Archer,TX
+Armstrong,TX
+Atascosa,TX
+Austin,TX
+Bailey,TX
+Bandera,TX
+Bastrop,TX
+Baylor,TX
+Becker,MN
+Bee,TX
+Bell,TX
+Beltrami,MN
+Benton,MN
+Bexar,TX
+Big Stone,MN
+Blanco,TX
+Blue Earth,MN
+Borden,TX
+Bosque,TX
+Bowie,TX
+Brazoria,TX
+Brazos,TX
+Brewster,TX
+Briscoe,TX
+Brooks,TX
+Brown_MN,MN
+Brown_TX,TX
+Burleson,TX
+Burnet,TX
+Butte,CA
+Calaveras,CA
+Caldwell,TX
+Calhoun,TX
+Callahan,TX
+Cameron,TX
+Camp,TX
+Carlton,MN
+Carson,TX
+Carver,MN
+Cass_MN,MN
+Cass_TX,TX
+Castro,TX
+Chambers,TX
+Cherokee,TX
+Childress,TX
+Chippewa,MN
+Chisago,MN
+Clay_MN,MN
+Clay_TX,TX
+Clearwater,MN
+Cochran,TX
+Coke,TX
+Coleman,TX
+Collin,TX
+Collingsworth,TX
+Colorado,TX
+Colusa,CA
+Comal,TX
+Comanche,TX
+Concho,TX
+Contra Costa,CA
+Cook,MN
+Cooke,TX
+Coryell,TX
+Cottle,TX
+Cottonwood,MN
+Crane,TX
+Crockett,TX
+Crosby,TX
+Crow Wing,MN
+Culberson,TX
+Dakota,MN
+Dallam,TX
+Dallas,TX
+Dawson,TX
+Deaf Smith,TX
+Del Norte,CA
+Delta,TX
+Denton,TX
+DeWitt,TX
+Dickens,TX
+Dimmit,TX
+Dodge,MN
+Donley,TX
+Douglas,MN
+Duval,TX
+Eastland,TX
+Ector,TX
+Edwards,TX
+El Dorado,CA
+El Paso,TX
+Ellis,TX
+Erath,TX
+Falls,TX
+Fannin,TX
+Faribault,MN
+Fayette,TX
+Fillmore,MN
+Fisher,TX
+Floyd,TX
+Foard,TX
+Fort Bend,TX
+Franklin,TX
+Freeborn,MN
+Freestone,TX
+Fresno,CA
+Frio,TX
+Gaines,TX
+Galveston,TX
+Garza,TX
+Gillespie,TX
+Glasscock,TX
+Glenn,CA
+Goliad,TX
+Gonzales,TX
+Goodhue,MN
+Grant,MN
+Gray,TX
+Grayson,TX
+Gregg,TX
+Grimes,TX
+Guadalupe,TX
+Hale,TX
+Hall,TX
+Hamilton,TX
+Hansford,TX
+Hardeman,TX
+Hardin,TX
+Harris,TX
+Harrison,TX
+Hartley,TX
+Haskell,TX
+Hays,TX
+Hemphill,TX
+Henderson,TX
+Hennepin,MN
+Hidalgo,TX
+Hill,TX
+Hockley,TX
+Hood,TX
+Hopkins,TX
+Houston_MN,MN
+Houston_TX,TX
+Howard,TX
+Hubbard,MN
+Hudspeth,TX
+Humboldt,CA
+Hunt,TX
+Hutchinson,TX
+Imperial,CA
+Inyo,CA
+Irion,TX
+Isanti,MN
+Itasca,MN
+Jack,TX
+Jackson_MN,MN
+Jackson_TX,TX
+Jasper,TX
+Jeff Davis,TX
+Jefferson,TX
+Jim Hogg,TX
+Jim Wells,TX
+Johnson,TX
+Jones,TX
+Kanabec,MN
+Kandiyohi,MN
+Karnes,TX
+Kaufman,TX
+Kendall,TX
+Kenedy,TX
+Kent,TX
+Kern,CA
+Kerr,TX
+Kimble,TX
+King,TX
+Kings,CA
+Kinney,TX
+Kittson,MN
+Kleberg,TX
+Knox,TX
+Koochiching,MN
+La Salle,TX
+Lac qui Parle,MN
+Lake_CA,CA
+Lake_MN,MN
+Lake of the Woods,MN
+Lamar,TX
+Lamb,TX
+Lampasas,TX
+Lassen,CA
+Lavaca,TX
+Le Sueur,MN
+Lee,TX
+Leon,TX
+Liberty,TX
+Limestone,TX
+Lincoln,MN
+Lipscomb,TX
+Live Oak,TX
+Llano,TX
+Los Angeles,CA
+Loving,TX
+Lubbock,TX
+Lynn,TX
+Lyon,MN
+Madera,CA
+Madison,TX
+Mahnomen,MN
+Marin,CA
+Marion,TX
+Mariposa,CA
+Marshall,MN
+Martin_MN,MN
+Martin_TX,TX
+Mason,TX
+Matagorda,TX
+Maverick,TX
+McCulloch,TX
+McLennan,TX
+McLeod,MN
+McMullen,TX
+Medina,TX
+Meeker,MN
+Menard,TX
+Mendocino,CA
+Merced,CA
+Midland,TX
+Milam,TX
+Mille Lacs,MN
+Mills,TX
+Mitchell,TX
+Modoc,CA
+Mono,CA
+Montague,TX
+Monterey,CA
+Montgomery,TX
+Moore,TX
+Morris,TX
+Morrison,MN
+Motley,TX
+Mower,MN
+Murray,MN
+Nacogdoches,TX
+Napa,CA
+Navarro,TX
+Nevada,CA
+Newton,TX
+Nicollet,MN
+Nobles,MN
+Nolan,TX
+Norman,MN
+Nueces,TX
+Ochiltree,TX
+Oldham,TX
+Olmsted,MN
+Orange_CA,CA
+Orange_TX,TX
+Otter Tail,MN
+Palo Pinto,TX
+Panola,TX
+Parker,TX
+Parmer,TX
+Pecos,TX
+Pennington,MN
+Pine,MN
+Pipestone,MN
+Placer,CA
+Plumas,CA
+Polk_MN,MN
+Polk_TX,TX
+Pope,MN
+Potter,TX
+Presidio,TX
+Rains,TX
+Ramsey,MN
+Randall,TX
+Reagan,TX
+Real,TX
+Red Lake,MN
+Red River,TX
+Redwood,MN
+Reeves,TX
+Refugio,TX
+Renville,MN
+Rice,MN
+Riverside,CA
+Roberts,TX
+Robertson,TX
+Rock,MN
+Rockwall,TX
+Roseau,MN
+Runnels,TX
+Rusk,TX
+Sabine,TX
+Sacramento,CA
+San Augustine,TX
+San Benito,CA
+San Bernardino,CA
+San Diego,CA
+San Francisco,CA
+San Jacinto,TX
+San Joaquin,CA
+San Luis Obispo,CA
+San Mateo,CA
+San Patricio,TX
+San Saba,TX
+Santa Barbara,CA
+Santa Clara,CA
+Santa Cruz,CA
+Schleicher,TX
+Scott,MN
+Scurry,TX
+Shackelford,TX
+Shasta,CA
+Shelby,TX
+Sherburne,MN
+Sherman,TX
+Sibley,MN
+Sierra,CA
+Siskiyou,CA
+Smith,TX
+Solano,CA
+Somervell,TX
+Sonoma,CA
+St. Louis,MN
+Stanislaus,CA
+Starr,TX
+Stearns,MN
+Steele,MN
+Stephens,TX
+Sterling,TX
+Stevens,MN
+Stonewall,TX
+Sutter,CA
+Sutton,TX
+Swift,MN
+Swisher,TX
+Tarrant,TX
+Taylor,TX
+Tehama,CA
+Terrell,TX
+Terry,TX
+Throckmorton,TX
+Titus,TX
+Todd,MN
+Tom Green,TX
+Traverse,MN
+Travis,TX
+Trinity_CA,CA
+Trinity_TX,TX
+Tulare,CA
+Tuolumne,CA
+Tyler,TX
+Upshur,TX
+Upton,TX
+Uvalde,TX
+Val Verde,TX
+Van Zandt,TX
+Ventura,CA
+Victoria,TX
+Wabasha,MN
+Wadena,MN
+Walker,TX
+Waller,TX
+Ward,TX
+Waseca,MN
+Washington_MN,MN
+Washington_TX,TX
+Watonwan,MN
+Webb,TX
+Wharton,TX
+Wheeler,TX
+Wichita,TX
+Wilbarger,TX
+Wilkin,MN
+Willacy,TX
+Williamson,TX
+Wilson,TX
+Winkler,TX
+Winona,MN
+Wise,TX
+Wood,TX
+Wright,MN
+Yellow Medicine,MN
+Yoakum,TX
+Yolo,CA
+Young,TX
+Yuba,CA
+Zapata,TX
+Zavala,TX

@@ -1,0 +1,10 @@
+state,fuel_type,emission_factor
+MN,E10,415
+MN,E85,293
+MN,electricity,209
+CA,E10,410
+CA,E85,282
+CA,electricity,120
+TX,E10,414
+TX,E85,291
+TX,electricity,189

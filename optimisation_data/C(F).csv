@@ -1,0 +1,10 @@
+﻿state,fuel_type,fuel_cost_per_mile
+CA,Electricity,0.021456
+CA,E85,0.04839506
+CA,E10,0.068465767
+MN,Electricity,0.022776
+MN,E85,0.03259259
+MN,E10,0.043728136
+TX,Electricity,0.015456
+TX,E85,0.02740741
+TX,E10,0.032733633

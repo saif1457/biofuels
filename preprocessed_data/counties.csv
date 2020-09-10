@@ -1,0 +1,400 @@
+,counties,county_stripped
+0,Alameda ,Alameda 
+1,"Alpine County, California",Alpine
+2,"Amador County, California",Amador
+3,"Butte County, California",Butte
+4,"Calaveras County, California",Calaveras
+5,"Colusa County, California",Colusa
+6,"Contra Costa County, California",Contra Costa
+7,"Del Norte County, California",Del Norte
+8,"El Dorado County, California",El Dorado
+9,"Fresno County, California",Fresno
+10,"Glenn County, California",Glenn
+11,"Humboldt County, California",Humboldt
+12,"Imperial County, California",Imperial
+13,"Inyo County, California",Inyo
+14,"Kern County, California",Kern
+15,"Kings County, California",Kings
+16,"Lake County, California",Lake
+17,"Lassen County, California",Lassen
+18,"Los Angeles County, California",Los Angeles
+19,"Madera County, California",Madera
+20,"Marin County, California",Marin
+21,"Mariposa County, California",Mariposa
+22,"Mendocino County, California",Mendocino
+23,"Merced County, California",Merced
+24,"Modoc County, California",Modoc
+25,"Mono County, California",Mono
+26,"Monterey County, California",Monterey
+27,"Napa County, California",Napa
+28,"Nevada County, California",Nevada
+29,"Orange County, California",Orange
+30,"Placer County, California",Placer
+31,"Plumas County, California",Plumas
+32,"Riverside County, California",Riverside
+33,"Sacramento County, California",Sacramento
+34,"San Benito County, California",San Benito
+35,"San Bernardino County, California",San Bernardino
+36,"San Diego County, California",San Diego
+37,"San Francisco County, California",San Francisco
+38,"San Joaquin County, California",San Joaquin
+39,"San Luis Obispo County, California",San Luis Obispo
+40,"San Mateo County, California",San Mateo
+41,"Santa Barbara County, California",Santa Barbara
+42,"Santa Clara County, California",Santa Clara
+43,"Santa Cruz County, California",Santa Cruz
+44,"Shasta County, California",Shasta
+45,"Sierra County, California",Sierra
+46,"Siskiyou County, California",Siskiyou
+47,"Solano County, California",Solano
+48,"Sonoma County, California",Sonoma
+49,"Stanislaus County, California",Stanislaus
+50,"Sutter County, California",Sutter
+51,"Tehama County, California",Tehama
+52,"Trinity County, California",Trinity
+53,"Tulare County, California",Tulare
+54,"Tuolumne County, California",Tuolumne
+55,"Ventura County, California",Ventura
+56,"Yolo County, California",Yolo
+57,"Yuba County, California",Yuba
+58,"Aitkin County, Minnesota",Aitkin
+59,"Anoka County, Minnesota",Anoka
+60,"Becker County, Minnesota",Becker
+61,"Beltrami County, Minnesota",Beltrami
+62,"Benton County, Minnesota",Benton
+63,"Big Stone County, Minnesota",Big Stone
+64,"Blue Earth County, Minnesota",Blue Earth
+65,"Brown County, Minnesota",Brown
+66,"Carlton County, Minnesota",Carlton
+67,"Carver County, Minnesota",Carver
+68,"Cass County, Minnesota",Cass
+69,"Chippewa County, Minnesota",Chippewa
+70,"Chisago County, Minnesota",Chisago
+71,"Clay County, Minnesota",Clay
+72,"Clearwater County, Minnesota",Clearwater
+73,"Cook County, Minnesota",Cook
+74,"Cottonwood County, Minnesota",Cottonwood
+75,"Crow Wing County, Minnesota",Crow Wing
+76,"Dakota County, Minnesota",Dakota
+77,"Dodge County, Minnesota",Dodge
+78,"Douglas County, Minnesota",Douglas
+79,"Faribault County, Minnesota",Faribault
+80,"Fillmore County, Minnesota",Fillmore
+81,"Freeborn County, Minnesota",Freeborn
+82,"Goodhue County, Minnesota",Goodhue
+83,"Grant County, Minnesota",Grant
+84,"Hennepin County, Minnesota",Hennepin
+85,"Houston County, Minnesota",Houston
+86,"Hubbard County, Minnesota",Hubbard
+87,"Isanti County, Minnesota",Isanti
+88,"Itasca County, Minnesota",Itasca
+89,"Jackson County, Minnesota",Jackson
+90,"Kanabec County, Minnesota",Kanabec
+91,"Kandiyohi County, Minnesota",Kandiyohi
+92,"Kittson County, Minnesota",Kittson
+93,"Koochiching County, Minnesota",Koochiching
+94,"Lac qui Parle County, Minnesota",Lac qui Parle
+95,"Lake County, Minnesota",Lake
+96,"Lake of the Woods County, Minnesota",Lake of the Woods
+97,"Le Sueur County, Minnesota",Le Sueur
+98,"Lincoln County, Minnesota",Lincoln
+99,"Lyon County, Minnesota",Lyon
+100,"McLeod County, Minnesota",McLeod
+101,"Mahnomen County, Minnesota",Mahnomen
+102,"Marshall County, Minnesota",Marshall
+103,"Martin County, Minnesota",Martin
+104,"Meeker County, Minnesota",Meeker
+105,"Mille Lacs County, Minnesota",Mille Lacs
+106,"Morrison County, Minnesota",Morrison
+107,"Mower County, Minnesota",Mower
+108,"Murray County, Minnesota",Murray
+109,"Nicollet County, Minnesota",Nicollet
+110,"Nobles County, Minnesota",Nobles
+111,"Norman County, Minnesota",Norman
+112,"Olmsted County, Minnesota",Olmsted
+113,"Otter Tail County, Minnesota",Otter Tail
+114,"Pennington County, Minnesota",Pennington
+115,"Pine County, Minnesota",Pine
+116,"Pipestone County, Minnesota",Pipestone
+117,"Polk County, Minnesota",Polk
+118,"Pope County, Minnesota",Pope
+119,"Ramsey County, Minnesota",Ramsey
+120,"Red Lake County, Minnesota",Red Lake
+121,"Redwood County, Minnesota",Redwood
+122,"Renville County, Minnesota",Renville
+123,"Rice County, Minnesota",Rice
+124,"Rock County, Minnesota",Rock
+125,"Roseau County, Minnesota",Roseau
+126,"St. Louis County, Minnesota",St. Louis
+127,"Scott County, Minnesota",Scott
+128,"Sherburne County, Minnesota",Sherburne
+129,"Sibley County, Minnesota",Sibley
+130,"Stearns County, Minnesota",Stearns
+131,"Steele County, Minnesota",Steele
+132,"Stevens County, Minnesota",Stevens
+133,"Swift County, Minnesota",Swift
+134,"Todd County, Minnesota",Todd
+135,"Traverse County, Minnesota",Traverse
+136,"Wabasha County, Minnesota",Wabasha
+137,"Wadena County, Minnesota",Wadena
+138,"Waseca County, Minnesota",Waseca
+139,"Washington County, Minnesota",Washington
+140,"Watonwan County, Minnesota",Watonwan
+141,"Wilkin County, Minnesota",Wilkin
+142,"Winona County, Minnesota",Winona
+143,"Wright County, Minnesota",Wright
+144,"Yellow Medicine County, Minnesota",Yellow Medicine
+145,"Anderson County, Texas",Anderson
+146,"Andrews County, Texas",Andrews
+147,"Angelina County, Texas",Angelina
+148,"Aransas County, Texas",Aransas
+149,"Archer County, Texas",Archer
+150,"Armstrong County, Texas",Armstrong
+151,"Atascosa County, Texas",Atascosa
+152,"Austin County, Texas",Austin
+153,"Bailey County, Texas",Bailey
+154,"Bandera County, Texas",Bandera
+155,"Bastrop County, Texas",Bastrop
+156,"Baylor County, Texas",Baylor
+157,"Bee County, Texas",Bee
+158,"Bell County, Texas",Bell
+159,"Bexar County, Texas",Bexar
+160,"Blanco County, Texas",Blanco
+161,"Borden County, Texas",Borden
+162,"Bosque County, Texas",Bosque
+163,"Bowie County, Texas",Bowie
+164,"Brazoria County, Texas",Brazoria
+165,"Brazos County, Texas",Brazos
+166,"Brewster County, Texas",Brewster
+167,"Briscoe County, Texas",Briscoe
+168,"Brooks County, Texas",Brooks
+169,"Brown County, Texas",Brown
+170,"Burleson County, Texas",Burleson
+171,"Burnet County, Texas",Burnet
+172,"Caldwell County, Texas",Caldwell
+173,"Calhoun County, Texas",Calhoun
+174,"Callahan County, Texas",Callahan
+175,"Cameron County, Texas",Cameron
+176,"Camp County, Texas",Camp
+177,"Carson County, Texas",Carson
+178,"Cass County, Texas",Cass
+179,"Castro County, Texas",Castro
+180,"Chambers County, Texas",Chambers
+181,"Cherokee County, Texas",Cherokee
+182,"Childress County, Texas",Childress
+183,"Clay County, Texas",Clay
+184,"Cochran County, Texas",Cochran
+185,"Coke County, Texas",Coke
+186,"Coleman County, Texas",Coleman
+187,"Collin County, Texas",Collin
+188,"Collingsworth County, Texas",Collingsworth
+189,"Colorado County, Texas",Colorado
+190,"Comal County, Texas",Comal
+191,"Comanche County, Texas",Comanche
+192,"Concho County, Texas",Concho
+193,"Cooke County, Texas",Cooke
+194,"Coryell County, Texas",Coryell
+195,"Cottle County, Texas",Cottle
+196,"Crane County, Texas",Crane
+197,"Crockett County, Texas",Crockett
+198,"Crosby County, Texas",Crosby
+199,"Culberson County, Texas",Culberson
+200,"Dallam County, Texas",Dallam
+201,"Dallas County, Texas",Dallas
+202,"Dawson County, Texas",Dawson
+203,"Deaf Smith County, Texas",Deaf Smith
+204,"Delta County, Texas",Delta
+205,"Denton County, Texas",Denton
+206,"DeWitt County, Texas",DeWitt
+207,"Dickens County, Texas",Dickens
+208,"Dimmit County, Texas",Dimmit
+209,"Donley County, Texas",Donley
+210,"Duval County, Texas",Duval
+211,"Eastland County, Texas",Eastland
+212,"Ector County, Texas",Ector
+213,"Edwards County, Texas",Edwards
+214,"Ellis County, Texas",Ellis
+215,"El Paso County, Texas",El Paso
+216,"Erath County, Texas",Erath
+217,"Falls County, Texas",Falls
+218,"Fannin County, Texas",Fannin
+219,"Fayette County, Texas",Fayette
+220,"Fisher County, Texas",Fisher
+221,"Floyd County, Texas",Floyd
+222,"Foard County, Texas",Foard
+223,"Fort Bend County, Texas",Fort Bend
+224,"Franklin County, Texas",Franklin
+225,"Freestone County, Texas",Freestone
+226,"Frio County, Texas",Frio
+227,"Gaines County, Texas",Gaines
+228,"Galveston County, Texas",Galveston
+229,"Garza County, Texas",Garza
+230,"Gillespie County, Texas",Gillespie
+231,"Glasscock County, Texas",Glasscock
+232,"Goliad County, Texas",Goliad
+233,"Gonzales County, Texas",Gonzales
+234,"Gray County, Texas",Gray
+235,"Grayson County, Texas",Grayson
+236,"Gregg County, Texas",Gregg
+237,"Grimes County, Texas",Grimes
+238,"Guadalupe County, Texas",Guadalupe
+239,"Hale County, Texas",Hale
+240,"Hall County, Texas",Hall
+241,"Hamilton County, Texas",Hamilton
+242,"Hansford County, Texas",Hansford
+243,"Hardeman County, Texas",Hardeman
+244,"Hardin County, Texas",Hardin
+245,"Harris County, Texas",Harris
+246,"Harrison County, Texas",Harrison
+247,"Hartley County, Texas",Hartley
+248,"Haskell County, Texas",Haskell
+249,"Hays County, Texas",Hays
+250,"Hemphill County, Texas",Hemphill
+251,"Henderson County, Texas",Henderson
+252,"Hidalgo County, Texas",Hidalgo
+253,"Hill County, Texas",Hill
+254,"Hockley County, Texas",Hockley
+255,"Hood County, Texas",Hood
+256,"Hopkins County, Texas",Hopkins
+257,"Houston County, Texas",Houston
+258,"Howard County, Texas",Howard
+259,"Hudspeth County, Texas",Hudspeth
+260,"Hunt County, Texas",Hunt
+261,"Hutchinson County, Texas",Hutchinson
+262,"Irion County, Texas",Irion
+263,"Jack County, Texas",Jack
+264,"Jackson County, Texas",Jackson
+265,"Jasper County, Texas",Jasper
+266,"Jeff Davis County, Texas",Jeff Davis
+267,"Jefferson County, Texas",Jefferson
+268,"Jim Hogg County, Texas",Jim Hogg
+269,"Jim Wells County, Texas",Jim Wells
+270,"Johnson County, Texas",Johnson
+271,"Jones County, Texas",Jones
+272,"Karnes County, Texas",Karnes
+273,"Kaufman County, Texas",Kaufman
+274,"Kendall County, Texas",Kendall
+275,"Kenedy County, Texas",Kenedy
+276,"Kent County, Texas",Kent
+277,"Kerr County, Texas",Kerr
+278,"Kimble County, Texas",Kimble
+279,"King County, Texas",King
+280,"Kinney County, Texas",Kinney
+281,"Kleberg County, Texas",Kleberg
+282,"Knox County, Texas",Knox
+283,"Lamar County, Texas",Lamar
+284,"Lamb County, Texas",Lamb
+285,"Lampasas County, Texas",Lampasas
+286,"La Salle County, Texas",La Salle
+287,"Lavaca County, Texas",Lavaca
+288,"Lee County, Texas",Lee
+289,"Leon County, Texas",Leon
+290,"Liberty County, Texas",Liberty
+291,"Limestone County, Texas",Limestone
+292,"Lipscomb County, Texas",Lipscomb
+293,"Live Oak County, Texas",Live Oak
+294,"Llano County, Texas",Llano
+295,"Loving County, Texas",Loving
+296,"Lubbock County, Texas",Lubbock
+297,"Lynn County, Texas",Lynn
+298,"McCulloch County, Texas",McCulloch
+299,"McLennan County, Texas",McLennan
+300,"McMullen County, Texas",McMullen
+301,"Madison County, Texas",Madison
+302,"Marion County, Texas",Marion
+303,"Martin County, Texas",Martin
+304,"Mason County, Texas",Mason
+305,"Matagorda County, Texas",Matagorda
+306,"Maverick County, Texas",Maverick
+307,"Medina County, Texas",Medina
+308,"Menard County, Texas",Menard
+309,"Midland County, Texas",Midland
+310,"Milam County, Texas",Milam
+311,"Mills County, Texas",Mills
+312,"Mitchell County, Texas",Mitchell
+313,"Montague County, Texas",Montague
+314,"Montgomery County, Texas",Montgomery
+315,"Moore County, Texas",Moore
+316,"Morris County, Texas",Morris
+317,"Motley County, Texas",Motley
+318,"Nacogdoches County, Texas",Nacogdoches
+319,"Navarro County, Texas",Navarro
+320,"Newton County, Texas",Newton
+321,"Nolan County, Texas",Nolan
+322,"Nueces County, Texas",Nueces
+323,"Ochiltree County, Texas",Ochiltree
+324,"Oldham County, Texas",Oldham
+325,"Orange County, Texas",Orange
+326,"Palo Pinto County, Texas",Palo Pinto
+327,"Panola County, Texas",Panola
+328,"Parker County, Texas",Parker
+329,"Parmer County, Texas",Parmer
+330,"Pecos County, Texas",Pecos
+331,"Polk County, Texas",Polk
+332,"Potter County, Texas",Potter
+333,"Presidio County, Texas",Presidio
+334,"Rains County, Texas",Rains
+335,"Randall County, Texas",Randall
+336,"Reagan County, Texas",Reagan
+337,"Real County, Texas",Real
+338,"Red River County, Texas",Red River
+339,"Reeves County, Texas",Reeves
+340,"Refugio County, Texas",Refugio
+341,"Roberts County, Texas",Roberts
+342,"Robertson County, Texas",Robertson
+343,"Rockwall County, Texas",Rockwall
+344,"Runnels County, Texas",Runnels
+345,"Rusk County, Texas",Rusk
+346,"Sabine County, Texas",Sabine
+347,"San Augustine County, Texas",San Augustine
+348,"San Jacinto County, Texas",San Jacinto
+349,"San Patricio County, Texas",San Patricio
+350,"San Saba County, Texas",San Saba
+351,"Schleicher County, Texas",Schleicher
+352,"Scurry County, Texas",Scurry
+353,"Shackelford County, Texas",Shackelford
+354,"Shelby County, Texas",Shelby
+355,"Sherman County, Texas",Sherman
+356,"Smith County, Texas",Smith
+357,"Somervell County, Texas",Somervell
+358,"Starr County, Texas",Starr
+359,"Stephens County, Texas",Stephens
+360,"Sterling County, Texas",Sterling
+361,"Stonewall County, Texas",Stonewall
+362,"Sutton County, Texas",Sutton
+363,"Swisher County, Texas",Swisher
+364,"Tarrant County, Texas",Tarrant
+365,"Taylor County, Texas",Taylor
+366,"Terrell County, Texas",Terrell
+367,"Terry County, Texas",Terry
+368,"Throckmorton County, Texas",Throckmorton
+369,"Titus County, Texas",Titus
+370,"Tom Green County, Texas",Tom Green
+371,"Travis County, Texas",Travis
+372,"Trinity County, Texas",Trinity
+373,"Tyler County, Texas",Tyler
+374,"Upshur County, Texas",Upshur
+375,"Upton County, Texas",Upton
+376,"Uvalde County, Texas",Uvalde
+377,"Val Verde County, Texas",Val Verde
+378,"Van Zandt County, Texas",Van Zandt
+379,"Victoria County, Texas",Victoria
+380,"Walker County, Texas",Walker
+381,"Waller County, Texas",Waller
+382,"Ward County, Texas",Ward
+383,"Washington County, Texas",Washington
+384,"Webb County, Texas",Webb
+385,"Wharton County, Texas",Wharton
+386,"Wheeler County, Texas",Wheeler
+387,"Wichita County, Texas",Wichita
+388,"Wilbarger County, Texas",Wilbarger
+389,"Willacy County, Texas",Willacy
+390,"Williamson County, Texas",Williamson
+391,"Wilson County, Texas",Wilson
+392,"Winkler County, Texas",Winkler
+393,"Wise County, Texas",Wise
+394,"Wood County, Texas",Wood
+395,"Yoakum County, Texas",Yoakum
+396,"Young County, Texas",Young
+397,"Zapata County, Texas",Zapata
+398,"Zavala County, Texas",Zavala

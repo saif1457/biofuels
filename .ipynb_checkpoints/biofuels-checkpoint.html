@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>BioFuels Optimised</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		#map {
+			width: 600px;
+			height: 400px;
+		}
+	</style>
+
+	<style>#map { width: 1300px; height: 800px;margin:30px auto; }
+.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
+.legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }</style>
+</head>
+<body>
+<div style="text-align: center; font: 14px/16px Arial, Helvetica">
+	<h4>Spring 2020, IEMS 394: <a href="https://github.com/saif1457/iems394">BioFuels Optimisation</a> <span style="color: #98b4d4">Visualised.</span></h3>
+	<h5>Saif Bhatti, Joyce Lu, Hannah Siegel, Basak Yolac</h4>
+</div>
+
+<div id='map'></div>
+
+<script type="text/javascript" src="state_output.js"></script>
+
+<script type="text/javascript">
+
+	// function thousands_separators(num){
+	// 	var num_parts = num.toString().split(".");
+	// 	num_parts[0] = num_parts[0].replace(/B(?=(\d{3})+(?!\d))/g, ",");
+	// 	return num_parts.join(".");
+  	// };
+	var map = L.map('map').setView([39.8333333, -98.585522], 4.5);
+
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/light-v9',
+		tileSize: 512,
+		zoomOffset: -1
+	}).addTo(map);
+
+
+	// control that shows state info on hover
+	var info = L.control();
+
+	info.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'info');
+		this.update();
+		return this._div;
+	};
+	
+	info.update = function (props) {
+		this._div.innerHTML = '<h4>US Transportation Emissions</h4>' +  (props ?
+			'<b>' + props.NAME + '</b><br />' + 'Total Annual Emissions: ' +  Math.round((props.annual_ghg_emissions/1000000)).toLocaleString() + ' (millions) GHG'
+			+ '</b><br />' + 'Annual Operating Cost: $' + Math.round((props.annual_operating_cost/1000000).toLocaleString()) + ' (millions)'
+			+ '</b><br />' + 'Total Annual Cost: $' + Math.round((props.total_annual_cost/1000000)).toLocaleString()+ ' (millions)'
+			+ '</b><br />' + 'BEV: ' + props.vehicle_pc_BEV + ' % ' + '(' + props.vehicle_split_BEV.toFixed(0).toLocaleString() + ')'
+			+ '</b><br />' + 'FFV: ' + props.vehicle_pc_FFV + ' % ' + '(' + props.vehicle_split_FFV.toFixed(0).toLocaleString() + ')'
+			+ '</b><br />' + 'SIDI: ' + props.vehicle_pc_SIDI + ' % ' + '(' + props.vehicle_split_SIDI.toFixed(0).toLocaleString() + ')'
+			+ '</b><br />' + 'Total Vehicle Count: ' + props.total_vehicle_count.toFixed(0).toLocaleString()
+			: 'Hover over a county');
+	};
+
+	info.addTo(map);
+
+
+	// get color depending on population density value
+	function getColor(d) {
+		return d > 1058990873599 ? '#800026' :
+				d > 369871720600.0  ? '#BD0026' :
+				d > 219972622399  ? '#E31A1C' :
+				d > 143996466102  ? '#FC4E2A' :
+				d > 69309903600.0   ? '#FD8D3C' :
+				d > 30012953800   ? '#FEB24C' :
+				d > 229084984.0   ? '#FED976' :
+							'#f0efeb';
+	}
+
+	function style(feature) {
+		return {
+			weight: 2,
+			opacity: 1,
+			color: 'white',
+			dashArray: '3',
+			fillOpacity: 0.7,
+			fillColor: getColor(feature.properties.annual_ghg_emissions)
+		};
+	}
+
+	function highlightFeature(e) {
+		var layer = e.target;
+
+		layer.setStyle({
+			weight: 5,
+			color: '#666',
+			dashArray: '',
+			fillOpacity: 0.7
+		});
+
+		if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+			layer.bringToFront();
+		}
+
+		info.update(layer.feature.properties);
+	}
+
+	var geojson;
+
+	function resetHighlight(e) {
+		geojson.resetStyle(e.target);
+		info.update();
+	}
+
+	function zoomToFeature(e) {
+		map.fitBounds(e.target.getBounds());
+	}
+
+	function onEachFeature(feature, layer) {
+		layer.on({
+			mouseover: highlightFeature,
+			mouseout: resetHighlight,
+			click: zoomToFeature
+		});
+	}
+
+	geojson = L.geoJson(statesData, {
+		style: style,
+		onEachFeature: onEachFeature
+	}).addTo(map);
+
+	map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
+
+
+	var legend = L.control({position: 'bottomright'});
+
+	legend.onAdd = function (map) {
+
+		var div = L.DomUtil.create('div', 'info legend'),
+			grades = [0,229084984, 30012953800, 69309903600, 143996466102, 219972622399, 369871720600,1058990873599],
+			labels = [],
+			from, to;
+
+		for (var i = 0; i < grades.length; i++) {
+			from = grades[i];
+			to = grades[i + 1];
+
+			labels.push(
+				'<i style="background:' + getColor(from + 1) + '"></i> ' +
+				from + (to ? '&ndash;' + to : '+'));
+		}
+
+		div.innerHTML = labels.join('<br>');
+		return div;
+	};
+
+	legend.addTo(map);
+
+</script>
+
+
+
+</body>
+</html>

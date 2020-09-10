@@ -1,0 +1,400 @@
+county,median_household_income_2018,household_income_ID
+Aitkin,"$44,016",5
+Alameda,"$101,744",8
+Alpine,"$55,384",6
+Amador,"$58,515",6
+Anderson,"$45,969",5
+Andrews,"$84,946",7
+Angelina,"$46,653",5
+Anoka,"$82,284",7
+Aransas,"$46,912",5
+Archer,"$61,190",6
+Armstrong,"$57,210",6
+Atascosa,"$50,594",6
+Austin,"$59,942",6
+Bailey,"$45,051",5
+Bandera,"$53,008",6
+Bastrop,"$61,883",6
+Baylor,"$41,180",5
+Becker,"$59,440",6
+Bee,"$41,806",5
+Bell,"$54,292",6
+Beltrami,"$47,073",5
+Benton,"$61,341",6
+Bexar,"$54,210",6
+Big Stone,"$51,058",6
+Blanco,"$64,832",6
+Blue Earth,"$58,132",6
+Borden,"$66,101",6
+Bosque,"$48,460",5
+Bowie,"$47,339",5
+Brazoria,"$74,225",6
+Brazos,"$50,113",6
+Brewster,"$45,670",5
+Briscoe,"$44,409",5
+Brooks,"$30,116",4
+Brown_MN,"$47,097",5
+Brown_TX,"$60,626",6
+Burleson,"$53,626",6
+Burnet,"$56,696",6
+Butte,"$50,945",6
+Calaveras,"$62,984",6
+Caldwell,"$52,588",6
+Calhoun,"$52,085",6
+Callahan,"$50,330",6
+Cameron,"$38,106",5
+Camp,"$43,714",5
+Carlton,"$60,412",6
+Carson,"$64,799",6
+Carver,"$104,248",8
+Cass_MN,"$44,154",5
+Cass_TX,"$48,651",5
+Castro,"$45,689",5
+Chambers,"$89,513",7
+Cherokee,"$43,483",5
+Childress,"$42,291",5
+Chippewa,"$53,540",6
+Chisago,"$82,814",7
+Clay_MN,"$58,356",6
+Clay_TX,"$65,914",6
+Clearwater,"$51,475",6
+Cochran,"$42,873",5
+Coke,"$44,804",5
+Coleman,"$39,484",5
+Collin,"$96,936",7
+Collingsworth,"$39,536",5
+Colorado,"$48,258",5
+Colusa,"$57,249",6
+Comal,"$76,523",7
+Comanche,"$52,251",6
+Concho,"$40,987",5
+Contra Costa,"$101,463",8
+Cook,"$54,465",6
+Cooke,"$52,047",6
+Coryell,"$48,099",5
+Cottle,"$38,304",5
+Cottonwood,"$51,788",6
+Crane,"$61,987",6
+Crockett,"$49,117",5
+Crosby,"$37,911",5
+Crow Wing,"$53,481",6
+Culberson,"$42,164",5
+Dakota,"$86,403",7
+Dallam,"$50,587",6
+Dallas,"$59,838",6
+Dawson,"$43,726",5
+Deaf Smith,"$44,230",5
+Del Norte,"$48,518",5
+Delta,"$44,410",5
+Denton,"$88,384",7
+DeWitt,"$49,208",5
+Dickens,"$39,627",5
+Dimmit,"$37,177",5
+Dodge,"$75,955",7
+Donley,"$40,945",5
+Douglas,"$60,979",6
+Duval,"$35,156",5
+Eastland,"$44,773",5
+Ector,"$60,431",6
+Edwards,"$37,812",5
+El Dorado,"$81,869",7
+El Paso,"$43,948",5
+Ellis,"$76,792",7
+Erath,"$47,087",5
+Falls,"$37,428",5
+Fannin,"$53,111",6
+Faribault,"$52,560",6
+Fayette,"$55,776",6
+Fillmore,"$58,761",6
+Fisher,"$45,261",5
+Floyd,"$39,891",5
+Foard,"$37,648",5
+Fort Bend,"$92,310",7
+Franklin,"$48,222",5
+Freeborn,"$52,010",6
+Freestone,"$49,317",5
+Fresno,"$52,318",6
+Frio,"$41,038",5
+Gaines,"$56,321",6
+Galveston,"$71,959",6
+Garza,"$46,490",5
+Gillespie,"$61,433",6
+Glasscock,"$83,330",7
+Glenn,"$47,365",5
+Goliad,"$55,008",6
+Gonzales,"$49,829",5
+Goodhue,"$67,039",6
+Grant,"$54,917",6
+Gray,"$49,121",5
+Grayson,"$51,403",6
+Gregg,"$50,610",6
+Grimes,"$49,498",5
+Guadalupe,"$73,864",6
+Hale,"$42,782",5
+Hall,"$32,597",4
+Hamilton,"$49,210",5
+Hansford,"$57,240",6
+Hardeman,"$42,469",5
+Hardin,"$60,909",6
+Harris,"$60,241",6
+Harrison,"$50,131",6
+Hartley,"$72,451",6
+Haskell,"$40,880",5
+Hays,"$68,180",6
+Hemphill,"$66,849",6
+Henderson,"$43,337",5
+Hennepin,"$76,067",7
+Hidalgo,"$38,785",5
+Hill,"$48,670",5
+Hockley,"$46,764",5
+Hood,"$60,917",6
+Hopkins,"$52,079",6
+Houston_MN,"$39,533",5
+Houston_TX,"$59,613",6
+Howard,"$50,423",6
+Hubbard,"$55,687",6
+Hudspeth,"$42,671",5
+Humboldt,"$49,471",5
+Hunt,"$53,360",6
+Hutchinson,"$54,351",6
+Imperial,"$46,633",5
+Inyo,"$53,793",6
+Irion,"$56,775",6
+Isanti,"$73,468",6
+Itasca,"$53,143",6
+Jack,"$48,780",5
+Jackson_MN,"$54,088",6
+Jackson_TX,"$57,786",6
+Jasper,"$47,551",5
+Jeff Davis,"$51,343",6
+Jefferson,"$48,121",5
+Jim Hogg,"$36,176",5
+Jim Wells,"$41,919",5
+Johnson,"$62,635",6
+Jones,"$43,903",5
+Kanabec,"$56,950",6
+Kandiyohi,"$60,579",6
+Karnes,"$48,743",5
+Kaufman,"$67,434",6
+Kendall,"$90,937",7
+Kenedy,"$42,153",5
+Kent,"$47,625",5
+Kern,"$51,586",6
+Kerr,"$53,704",6
+Kimble,"$42,503",5
+King,"$57,925",6
+Kings,"$58,255",6
+Kinney,"$43,192",5
+Kittson,"$54,438",6
+Kleberg,"$42,605",5
+Knox,"$39,726",5
+Koochiching,"$46,281",5
+La Salle,"$40,072",5
+Lac qui Parle,"$52,445",6
+Lake_CA,"$45,086",5
+Lake_MN,"$61,015",6
+Lake of the Woods,"$52,058",6
+Lamar,"$45,767",5
+Lamb,"$42,700",5
+Lampasas,"$55,151",6
+Lassen,"$57,705",6
+Lavaca,"$51,128",6
+Le Sueur,"$67,269",6
+Lee,"$55,834",6
+Leon,"$47,065",5
+Liberty,"$52,577",6
+Limestone,"$43,226",5
+Lincoln,"$51,305",6
+Lipscomb,"$57,332",6
+Live Oak,"$48,814",5
+Llano,"$54,019",6
+Los Angeles,"$67,986",6
+Loving,"$78,637",7
+Lubbock,"$50,377",6
+Lynn,"$43,436",5
+Lyon,"$57,690",6
+Madera,"$53,632",6
+Madison,"$45,445",5
+Mahnomen,"$43,162",5
+Marin,"$122,933",8
+Marion,"$38,011",5
+Mariposa,"$51,402",6
+Marshall,"$58,105",6
+Martin_MN,"$50,821",6
+Martin_TX,"$56,484",6
+Mason,"$49,560",5
+Matagorda,"$48,830",5
+Maverick,"$35,594",5
+McCulloch,"$42,719",5
+McLennan,"$48,858",5
+McLeod,"$61,959",6
+McMullen,"$64,633",6
+Medina,"$59,304",6
+Meeker,"$66,557",6
+Menard,"$35,881",5
+Mendocino,"$51,386",6
+Merced,"$56,169",6
+Midland,"$80,189",7
+Milam,"$46,720",5
+Mille Lacs,"$53,289",6
+Mills,"$47,068",5
+Mitchell,"$48,529",5
+Modoc,"$45,227",5
+Mono,"$66,499",6
+Montague,"$50,542",6
+Monterey,"$69,665",6
+Montgomery,"$77,598",7
+Moore,"$53,785",6
+Morris,"$41,418",5
+Morrison,"$57,471",6
+Motley,"$41,009",5
+Mower,"$53,387",6
+Murray,"$59,938",6
+Nacogdoches,"$45,357",5
+Napa,"$85,624",7
+Navarro,"$46,259",5
+Nevada,"$66,681",6
+Newton,"$43,367",5
+Nicollet,"$66,209",6
+Nobles,"$55,766",6
+Nolan,"$42,522",5
+Norman,"$48,799",5
+Nueces,"$53,034",6
+Ochiltree,"$49,845",5
+Oldham,"$56,590",6
+Olmsted,"$76,001",7
+Orange_CA,"$56,556",6
+Orange_TX,"$89,373",7
+Otter Tail,"$53,778",6
+Palo Pinto,"$46,067",5
+Panola,"$51,192",6
+Parker,"$73,718",6
+Parmer,"$50,539",6
+Pecos,"$47,008",5
+Pennington,"$57,494",6
+Pine,"$50,387",6
+Pipestone,"$55,378",6
+Placer,"$89,175",7
+Plumas,"$55,079",6
+Polk_MN,"$46,017",5
+Polk_TX,"$60,180",6
+Pope,"$60,975",6
+Potter,"$41,912",5
+Presidio,"$37,738",5
+Rains,"$47,572",5
+Ramsey,"$62,937",6
+Randall,"$69,600",6
+Reagan,"$65,273",6
+Real,"$39,506",5
+Red Lake,"$54,412",6
+Red River,"$42,233",5
+Redwood,"$56,760",6
+Reeves,"$45,341",5
+Refugio,"$44,821",5
+Renville,"$59,787",6
+Rice,"$67,024",6
+Riverside,"$66,793",6
+Roberts,"$67,470",6
+Robertson,"$44,917",5
+Rock,"$63,503",6
+Rockwall,"$102,858",8
+Roseau,"$60,239",6
+Runnels,"$42,205",5
+Rusk,"$49,788",5
+Sabine,"$40,641",5
+Sacramento,"$69,475",6
+San Augustine,"$38,826",5
+San Benito,"$80,063",7
+San Bernardino,"$63,310",6
+San Diego,"$78,777",7
+San Francisco,"$110,601",8
+San Jacinto,"$47,028",5
+San Joaquin,"$63,567",6
+San Luis Obispo,"$70,626",6
+San Mateo,"$122,930",8
+San Patricio,"$53,559",6
+San Saba,"$43,827",5
+Santa Barbara,"$75,646",7
+Santa Clara,"$125,933",9
+Santa Cruz,"$84,213",7
+Schleicher,"$47,317",5
+Scott,"$101,427",8
+Scurry,"$53,059",6
+Shackelford,"$57,126",6
+Shasta,"$53,908",6
+Shelby,"$41,961",5
+Sherburne,"$81,850",7
+Sherman,"$57,052",6
+Sibley,"$66,209",6
+Sierra,"$52,308",6
+Siskiyou,"$47,560",5
+Smith,"$56,848",6
+Solano,"$82,808",7
+Somervell,"$63,929",6
+Sonoma,"$81,002",7
+St. Louis,"$53,833",6
+Stanislaus,"$59,616",6
+Starr,"$30,490",4
+Stearns,"$60,843",6
+Steele,"$65,323",6
+Stephens,"$43,115",5
+Sterling,"$59,064",6
+Stevens,"$61,929",6
+Stonewall,"$46,915",5
+Sutter,"$57,879",6
+Sutton,"$54,774",6
+Swift,"$51,552",6
+Swisher,"$43,084",5
+Tarrant,"$66,059",6
+Taylor,"$48,040",5
+Tehama,"$47,572",5
+Terrell,"$41,413",5
+Terry,"$41,268",5
+Throckmorton,"$42,701",5
+Titus,"$45,604",5
+Todd,"$58,113",6
+Tom Green,"$51,393",6
+Traverse,"$49,773",5
+Travis,"$76,255",7
+Trinity_CA,"$40,486",5
+Trinity_TX,"$40,680",5
+Tulare,"$48,763",5
+Tuolumne,"$56,500",6
+Tyler,"$44,041",5
+Upshur,"$48,554",5
+Upton,"$53,867",6
+Uvalde,"$39,725",5
+Val Verde,"$44,276",5
+Van Zandt,"$51,152",6
+Ventura,"$84,170",7
+Victoria,"$51,646",6
+Wabasha,"$63,633",6
+Wadena,"$46,312",5
+Walker,"$43,681",5
+Waller,"$59,807",6
+Ward,"$53,621",6
+Waseca,"$58,335",6
+Washington_MN,"$54,332",6
+Washington_TX,"$95,840",7
+Watonwan,"$51,962",6
+Webb,"$44,919",5
+Wharton,"$48,040",5
+Wheeler,"$48,018",5
+Wichita,"$47,477",5
+Wilbarger,"$44,735",5
+Wilkin,"$61,387",6
+Willacy,"$33,171",4
+Williamson,"$87,817",7
+Wilson,"$71,207",6
+Winkler,"$56,781",6
+Winona,"$56,076",6
+Wise,"$66,387",6
+Wood,"$48,384",5
+Wright,"$87,377",7
+Yellow Medicine,"$56,528",6
+Yoakum,"$61,560",6
+Yolo,"$67,804",6
+Young,"$49,301",5
+Yuba,"$47,504",5
+Zapata,"$33,160",4
+Zavala,"$30,076",4
