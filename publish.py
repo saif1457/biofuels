@@ -95,11 +95,6 @@ st.pyplot()
 
 sns.regplot(tx_vdf['annual_ghg_emissions'],tx_vdf['total_vehicle_count']).set_title("TX Annual GHG emissions vs Total Vehicles")
 st.pyplot()
-
-
-
-st.write('Turning attention to answering the biofuels/EV complement on a county basis, particularly interesting counties within each state will be examined in turn.')
-
 # ru = pd.read_csv('preprocessed_data/rural_urban.csv')
 # del ru['Note']
 # ru = ru[ru.State.isin(selected_states)]
@@ -153,15 +148,42 @@ pd.DataFrame([a,b,c,d]).T
 # plt.scatter(X, y)
 # plt.plot(X, y_pred, color='red')
 # st.pyplot()
+st.write('Turning attention to answering the biofuels/EV complement on a county basis, particularly interesting counties within each state will be examined in turn. **All results contained below are conducted with the residential EVSE boost activated, a 6-mile charging station range, and 25% GHG reduction target**. This is reflective of the aims of the original manuscript.')
+st.markdown('## California')
+st.write('Of the 58 counties in California, every single one of them has a non-zero EV allocation, which provides adequate rationale for California to have the highest BEV allocation within this sample of states. In terms of the biofuels complement: there are no counties have a non-zero FFV allocation where BEV allocation is zero. There is despite 29 or 50% of California’s counties having a non-zero FFV allocation. Again, this provides support for the preference for BEV over FFV allocation due to lower emission factors whenever a free choice is available. Even within these 29 counties, average FFV allocation account for only 10.8% compared against 52.3% BEV and 36.9% SIDI.')
+st.markdown('#### San Francisco County, CA')
+st.write('A outlier is San Francisco, and this make sense given that across the analysed states, this is definitely the biggest city/county. San Francisco County (CA) is home to the city of San Francisco, which stands alongside New York and Chicago as the nation\'s three major urban hubs. Due to being on a peninsula with limited space (the entire county is only 47 square miles) and the centre of entreprenuerial life in the US, it make sense that San Francisco County (CA) has the highest population density in this sample. With the dense county included, the correlation between population density and \'efuels_area\' is 0.48, which is moderately positive.')
 
-st.markdown('#### San Francisco, CA')
-st.write('The above outlier is San Francisco, and this make sense given that across the analysed states, this is definitely the biggest city/county. San Francisco County (CA) is home to the city of San Francisco, which stands alongside New York and Chicago as the nation\'s three major urban hubs. Due to being on a peninsula with limited space (the entire county is only 47 square miles) and the centre of entreprenuerial life in the US, it make sense that San Francisco County (CA) has the highest population density in this sample. With the dense county included, the correlation between population density and \'efuels_area\' is 0.48, which is moderately positive.')
+st.markdown('#### Los Angeles County, CA')
+st.write('Los Angeles County has the highest population density in California, has the highest GHG emis- sions for the state. The opposite is also true: counties the lowest population densities also have the lowest GHG emissions. For instance, Modoc (CA) is a county with a low population density, and has one of the lowest GHG emissions in the state. This trend is visible despite the fact that Los Angeles (CA) has a (SIDI = 3.2%, BEV = 63%, FFV = 33.8%) split, compared with Modoc (CA) at a (SIDI = 94.7%, BEV = 5.3%, FFV = 0%) split.')
 
-st.markdown('#### Lubbock, TX')
+st.markdown('#### San Bernardino County, CA')
+st.write('Despite being California’s largest county by census area, San Bernardino County only registers 9th in terms of GHG emissions. This is mostly due to the lower population density and lack of urban center means that it is classified as a suburban county. Despite having only 4.7% rural population and benefiting from the EVSE residential charging boost, it only has a 9.9% EV allocation, 4.3% FFV allocation and 85.9% SIDI allocation. This comes as a surprise, and appears to buck the suburban county trend to have significant (over 10%) EV allocation, but given expansive nature of the county, it also makes sense that lacking sufficient E85 fuel infrastructure means that gas- powered vehicles are more relevant to the possibly longer journeys.')
+
+st.markdown('## Texas')
+st.write('Of the 254 counties in Texas, 123 had a non-zero BEV allocation. There are 5 counties in Texas which have FFV allocations where BEV allocations are zero, alluding to the existence of E85 infrastructure where EV infrastructure does not exist. As mentioned previously, these counties have not had an EV coverage boost due to residential charging - which is given only to suburban and urban counties - which means that these counties are rural. Only 2 of these counties - Scurry County and Brown County - accounted for significant FFV allocations (allocations exceeding 10%), compared with 15 with Minnesota, and none in California in the same analysis. This hints to the relatively limited FFV infrastructure in areas without BEV infrastructure.')
+st.markdown('#### Lubbock County, TX')
 st.write('Despite being surrounded by many rural counties in north Texas, Lubbock (TX) boasts existing infrastructure for both EV and E85 fuels. Based on its population density, it is classified as a suburuban county, and contains the city of Lubbock. Here, FFV allocations account for almost 30% of total vehicles (29.40%), which is more than 10 times the Texas state average of just 3.41%. [More details about EV - talk about changes during the update] How much of TX mean comes from Lubbock Texas')
 
-st.markdown('#### Bexar, TX')
+st.markdown('#### Bexar County, TX')
 st.write('Bexar county stands out in terms of emissions, and is classed as an \'urban\' county, containing the city of San Antonio. It has excellent EV infrastructure, which sees 65.70% of the vehicle allocation assigned as electric. It benefitted significantly from residential enhancements, which took the estimated coverage of EV infrastructure from 65% coverage to 90.7%, which puts Bexar in the xx% percentile in Texas')
+
+st.markdown('#### Dallas County, TX')
+st.write('Dallas County leads Texas in terms of annual GHG emissions by a significant margin (it outputs over 35% more emissions than second-placed Tarrant County). This is coupled with being home to the City of Dallas, which makes Dallas County an urban county. It comes as a surprise, given this leaderboard, that Dallas County also enjoys one of the nation’s more prominent EV rebate programs, which may contribute to its entirely alternative fuel allocation (98.3% BEV, 1.7% FFV). There are no SIDI allocations in this county. It is possible that the excess of GHG emissions is representative of the population density, which is also the highest in Texas.')
+
+st.markdown('#### Comal County, TX')
+st.write('Comal County stands out as an anomaly in the Texas alternative fuel landscape, with over 46.1% of its population rural, it is classified as suburban overall. This leads to the residential EVSE charging boost, and a resultant 41.6% EV presence. However, the reason for its status as an anomaly is because Comal County is one of few counties across the entire sample to have a higher FFV allocation compared to the BEV allocation where both allocations comprise of high values: (BEV: 41.6% vs FFV 46.3%). It also had a 12.10% SIDI presence. This coupling gives support to the idea that biofuel complements can not only overlap areas that also have a EV infrastructure, but aid in decreasing the SIDI requirements.')
+
+st.markdown('## Minnesota')
+st.write('Of the 87 counties in Minnesota, 18 have no BEV infrastructure (and correspondingly no allocation). As a corollary, these counties are exclusively rural, since both urban and suburban counties have been given an EV boost to account for residential charging. Across these counties, their allocations average 27.4% FFV and 72.6% SIDI allocations. There are two counties - Waseca County and Cottonwood County - which boast over 60% FFV allocations. Of these 18 counties, 15 counties held significant FFV allocations, over 10%. Other notable counties include:')
+
+st.markdown('#### Ramsey County, MN')
+st.write('Ramsey County represents Minnesota’s smallest county by census area, but also contains the City of St. Paul, and overall is the second most populous county in Minnesota. Due to its high population density, it has been classified as an urban county, and it also boasts 100% EV vehicle allocation.')
+st.markdown('#### Hennepin County, MN')
+st.write('Hennepin County represents Minnesota’s most populous county, containing the City of Minneapo- lis. Due to its high population density, it has been classified as an urban county, and also features an entirely alternative fuel allocation with 91.6% being BEV, and 8.40% being FFV.')
+st.markdown('#### St. Louis County, MN')
+st.write('St. Louis County is Minnesota’s largest county by census area, and is also home to the City of Duluth along its south-eastern boundary. Despite encompassing this urban centre, the rest of the state is very rural, with a correspondingly low population density. Overall - and due in large part to Duluth - the model parameters classify the state as a suburban county. As a result, the +40% EV coverage boost used to emulate residential EVSEs means that the county now features an increased BEV presence when compared against the original model without this consideration. As a result, St. Louis has a 10.8% BEV presence. The statewide trend of having extensive biofuels / E85 infrastructure continues, with a 3.60% FFV vehicle allocation. The remaining 85.6% is SIDI, which makes sense given the rural nature of upstate St. Louis.')
+
 
 tx_int = pd.concat([tx_vdf[tx_vdf['County'].isin(['Travis','Harris','Dallas','Bexar'])].T, c],axis=1)
 tx_int = pd.concat([tx_vdf[tx_vdf['County'].isin(['Travis','Harris','Dallas','Bexar'])].T, c],axis=1)
