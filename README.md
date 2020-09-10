@@ -29,7 +29,10 @@ In order to utilise the Biofuels Model, follow these steps:
 -  preprocessing (`preprocessing.py` file , runtime ranging from 0.1s to 4 minutes depending on user inputs), 
 - optimisation model (`optimisation.py` file, runtime ~15 seconds),
 - post-processing (`postprocessing.py` file, runtime ~20 seconds), which updates the JavaScript visualisation and it can be opened in a new tab.
-
+Running everything successfully will look like this:
+<p align="center">
+  <img src="./tex/systems.png" align="center" alt="drawing" width="500"/>
+</p>
 ##### Endnote: 
 Overall run time ranges from under a minute to 6 minutes depending on the user choices for parameters mentioned above. However, the preprocessing file stores all results from computations into `preprocessed_data/pickles` and will reload from memory if the same user choices are selected, speeding up overall process significantly. Streamlit applications also cache results, which also improves run time.
 
