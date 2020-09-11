@@ -190,11 +190,3 @@ tx_int = pd.concat([tx_vdf[tx_vdf['County'].isin(['Travis','Harris','Dallas','Be
 tx_int.columns = ['Bexar','Harris','Dallas','Travis','TX_mean']
 # tx_int['Travis_diff'] = tx_int.iloc[1:12,3].sub(tx_int['TX_mean'][1:12], axis = 0) 
 tx_int
-
-
-st.markdown('#### Fresno')
-st.markdown('#### Los Angeles')
-st.markdown('#### San Mateo')
-st.markdown('#### San Bernadino')
-st.markdown('#### San Joaquin')
-
