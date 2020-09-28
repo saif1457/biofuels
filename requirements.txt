@@ -4,7 +4,6 @@ adafruit-circuitpython-sht31d==2.3.2
 Adafruit-PlatformDetect==2.14.3
 Adafruit-PureIO==1.1.5
 alabaster==0.7.12
-altair==4.1.0
 amplpy==0.6.11
 anaconda-client==1.6.5
 anaconda-navigator==1.6.9
