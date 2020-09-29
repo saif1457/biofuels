@@ -127,6 +127,7 @@ if choose_state == 'California':
     st.pyplot()
 
     st.write('Of the 58 counties in California, every single one of them has a non-zero EV allocation, which provides adequate rationale for California to have the highest BEV allocation within this sample of states. In terms of the biofuels complement: there are no counties have a non-zero FFV allocation where BEV allocation is zero. There make sense given that there are only 4 or 6% of California\'s counties that have a non-zero FFV allocation. Again, this provides support for the preference for BEV over FFV allocation due to lower emission factors whenever a free choice is available. Even within these 21 counties, average FFV allocation account for only 2.5% compared against 89.67% BEV and 7.85% SIDI.')
+    
     st.markdown('#### San Francisco County, CA')
     st.write('A outlier is San Francisco, and this make sense given that across the analysed states, this is definitely the biggest city/county. San Francisco County (CA) is home to the city of San Francisco, which stands alongside New York and Chicago as the nation\'s three major urban hubs. Due to being on a peninsula with limited space (the entire county is only 47 square miles) and the centre of entreprenuerial life in the US, it make sense that San Francisco County (CA) has the highest population density in this sample. With the dense county included, the correlation between population density and \'efuels_area\' is 0.48, which is moderately positive.')
 
@@ -140,11 +141,11 @@ elif choose_state == 'Minnesota':
     st.markdown('## Minnesota')
     sns.regplot(mn_vdf['annual_ghg_emissions'],mn_vdf['total_vehicle_count']).set_title("MN Annual GHG emissions vs Total Vehicles")
     st.pyplot()
-    st.write('Of the 87 counties in Minnesota, 42 have FFV allocations that *exceed* their corresponding BEV allocation. The prototypical description of such a county is suburban,  with an average FFV allocation of 31.5%, 60.9% SIDI and just 7.5% BEV. This result aligns with expectations within the context of Minnesota being a core market for biofuels fuel and infrastructure within the US and within this sample.')
+    st.write('Of the 87 counties in Minnesota, 42 have FFV allocations that *exceed* their corresponding BEV allocation. The prototypical description of such a county is suburban,  with an average FFV allocation of 31.5%, 60.9% SIDI and just 7.5% BEV. This result aligns with expectations within the context of Minnesota being a core market for biofuels and infrastructure within the US and within this sample.')
     
     st.write('Across Minnesota, 25 counties have no BEV infrastructure (and correspondingly no allocation). As a corollary, these counties are exclusively rural, since both urban and suburban counties have been given an EV boost to account for residential charging. Across these counties, their allocations average 20.51% FFV and 79.5% SIDI allocations. There are two counties - Waseca County and Cottonwood County - which boast over 60% FFV allocations. Of these 25 counties, 16 counties held significant FFV allocations, over 10%. Some notable counties include:')
     st.markdown('#### Waseca County, MN')
-    st.write('Despite being surrounded by many rural counties, Waseca (TX) boasts existing infrastructure for both EV and E85 fuels. Based on its population density, it is classified as a rural county. Here, FFV allocations account for almost 70% of total vehicles (68.1%), which is more than 10 times the Minnesota state average of 16.4%. There is no EV component to the allocation, with the remaining 31.9% coming from SIDI vehicles. The FFV allocation stands out significantly, but further examinations lead to the understand that Waseca is outside the top 50% counties by `annual_ghg_emissions` in Minnesota (46th of 87) and is ranked 175th across the sample.')
+    st.write('Despite being surrounded by many rural counties, Waseca (TX) boasts existing infrastructure for both EV and E85 fuels. Based on its population density, it is classified as a rural county. Here, FFV allocations account for almost 70% of total vehicles (68.1%), which is more than 4 times the Minnesota state average of 16.4%. There is no EV component to the allocation, with the remaining 31.9% coming from SIDI vehicles. The FFV allocation stands out significantly, but further examinations lead to the understand that Waseca is outside the top 50% counties by `annual_ghg_emissions` in Minnesota (46th of 87) and is ranked 175th across the sample.')
 
     st.markdown('#### Ramsey County, MN')
     st.write('Ramsey County represents Minnesota\'s smallest county by census area, but also contains the City of St. Paul, and overall is the second most populous county in Minnesota. Due to its high population density, it has been classified as an urban county, and it also boasts 100% EV vehicle allocation.')
@@ -177,9 +178,9 @@ choose_state = choose_state.replace('Texas','TX')
 if choose_state == 'CA':
     default_selection = ['San Francisco','Los Angeles','San Bernardino']
 elif choose_state == 'TX':
-    default_selection = ['Bexar','Dallas','Comal','Lubbock','Travis']
+    default_selection = ['Bexar','Dallas','Comal','Austin','Travis']
 elif choose_state == 'MN':
-    default_selection = ['Ramsey','Hennepin','St. Louis']
+    default_selection = ['Ramsey','Hennepin','St. Louis','Waseca']
 
 st.success('#### New Feature: Ranking Engine')
 st.write('Using a ranking system makes it easier for viewers to make comparisons between relative datasets. First `globalrank` gives the county\'s relative position within the entire sample, providing critical context. This is accompanied by `staterank`, which summarises the county\'s position within its own state.')
@@ -204,8 +205,11 @@ show_multi
 
 analysis_multi = st.multiselect('Select analysis:',['Rank by GHG output','Rank by Census Area','Rank by Pop Density'])
 if 'Rank by GHG output' in analysis_multi:
+    st.markdown('##### Rank by GHG output')
     st.write(vdf[['County','State','ghg_globalrank','ghg_staterank','vehicle_pc_BEV','vehicle_pc_FFV','vehicle_pc_SIDI']].sort_values(by=['ghg_staterank','ghg_globalrank'],ascending=True).head(15))
 if 'Rank by Census Area' in analysis_multi:
+    st.markdown('##### Rank by Census Area')
     st.write(vdf[['County','State','censusarea_globalrank','censusarea_staterank','vehicle_pc_BEV','vehicle_pc_FFV','vehicle_pc_SIDI']].sort_values(by=['censusarea_staterank','censusarea_globalrank'],ascending=True).head(15))
 if 'Rank by Pop Density' in analysis_multi:
-    vdf[['County','State','popden_globalrank','popden_staterank','vehicle_pc_BEV','vehicle_pc_FFV','vehicle_pc_SIDI']].sort_values(by=['popden_staterank','popden_globalrank'],ascending=True).head(15)
+    st.markdown('##### Rank by Pop Density')
+    st.write(vdf[['County','State','popden_globalrank','popden_staterank','vehicle_pc_BEV','vehicle_pc_FFV','vehicle_pc_SIDI']].sort_values(by=['popden_staterank','popden_globalrank'],ascending=True).head(15))
