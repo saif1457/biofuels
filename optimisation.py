@@ -62,7 +62,7 @@ efuels_vi['efuels_area_new'] = readFrame['efuels_area']/100
 
 
 e85vi_param = e85_vi.groupby('county')['e85_area'].apply(list).to_dict()
-efuelsvi_param = efuels_vi.groupby('county')['efuels_area'].apply(list).to_dict()
+efuelsvi_param = efuels_vi.groupby('county')['efuels_area_new'].apply(list).to_dict()
 
 v = V['vehicle_type']
 f = F['fuel_type']
