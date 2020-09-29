@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import streamlit as st
 import seaborn as sns
 import pandas as pd
@@ -127,7 +127,7 @@ if choose_state == 'California':
     st.pyplot()
 
     st.write('Of the 58 counties in California, every single one of them has a non-zero EV allocation, which provides adequate rationale for California to have the highest BEV allocation within this sample of states. In terms of the biofuels complement: there are no counties have a non-zero FFV allocation where BEV allocation is zero. There make sense given that there are only 4 or 6% of California\'s counties that have a non-zero FFV allocation. Again, this provides support for the preference for BEV over FFV allocation due to lower emission factors whenever a free choice is available. Even within these 21 counties, average FFV allocation account for only 2.5% compared against 89.67% BEV and 7.85% SIDI.')
-    
+
     st.markdown('#### San Francisco County, CA')
     st.write('A outlier is San Francisco, and this make sense given that across the analysed states, this is definitely the biggest city/county. San Francisco County (CA) is home to the city of San Francisco, which stands alongside New York and Chicago as the nation\'s three major urban hubs. Due to being on a peninsula with limited space (the entire county is only 47 square miles) and the centre of entreprenuerial life in the US, it make sense that San Francisco County (CA) has the highest population density in this sample. With the dense county included, the correlation between population density and \'efuels_area\' is 0.48, which is moderately positive.')
 
