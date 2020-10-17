@@ -1,4 +1,0 @@
-Host biofuels_app
-	HostName 54.184.0.134
-	User ec2-user
-	IdentityFile /Users/saifbhatti/Desktop/biofuels/buddy_biofuels.pem
