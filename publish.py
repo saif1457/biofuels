@@ -124,7 +124,8 @@ choose_state = st.radio("Choose a state to analyse",('California', 'Minnesota', 
 if choose_state == 'California':
     st.markdown('## California')
     # sns.regplot(ca_vdf['annual_ghg_emissions'],ca_vdf['total_vehicle_count']).set_title("CA Annual GHG emissions vs Total Vehicles")
-    st.pyplot(sns.regplot(ca_vdf['annual_ghg_emissions'],ca_vdf['total_vehicle_count']).set_title("CA Annual GHG emissions vs Total Vehicles"))
+    sns.regplot(ca_vdf['annual_ghg_emissions'],ca_vdf['total_vehicle_count']).set_title("CA Annual GHG emissions vs Total Vehicles")
+    st.pyplot()
 
     st.write('Of the 58 counties in California, every single one of them has a non-zero EV allocation, which provides adequate rationale for California to have the highest BEV allocation within this sample of states. In terms of the biofuels complement: there are no counties have a non-zero FFV allocation where BEV allocation is zero. There make sense given that there are only 4 or 6% of California\'s counties that have a non-zero FFV allocation. Again, this provides support for the preference for BEV over FFV allocation due to lower emission factors whenever a free choice is available. Even within these 21 counties, average FFV allocation account for only 2.5% compared against 89.67% BEV and 7.85% SIDI.')
 
