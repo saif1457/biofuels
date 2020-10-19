@@ -14,7 +14,7 @@ selected_states = ['CA','TX','MN']
 
 st.markdown('## *How can BioFuels Complement Fleet Electrification?*')
 st.markdown('### A Study of Transport Emissions in the United States')
-st.markdown('#### This site is operating off of a EC2 machine, with Streamlit dashboard, GitHub version control and Buddy CI/CD.')
+st.markdown('#### This site is operating using a EC2 machine, with Streamlit dashboard, GitHub version control and Buddy CI/CD.')
 def _max_width_():
     max_width_str = f"max-width: 900px;"
     st.markdown(
