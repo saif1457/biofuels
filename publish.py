@@ -110,7 +110,7 @@ st.markdown('## State Analysis')
 st.markdown('### Comparing the mean values across the states')
 st.write('Turning attention to answering the biofuels/EV complement on a county basis, particularly interesting counties within each state will be examined in turn. **All results contained below are conducted with the residential EVSE boost activated, a 6-mile charging station range, and 25% GHG reduction target**. This is reflective of the aims of the original manuscript.')
 
-a = pd.Series(vdf[['annual_ghg_emissions','annual_operating_cost','total_annual_cost','vehicle_pc_BEV','vehicle_pc_FFV','vehicle_pc_SIDI','census_totpop','pct_rural','pop_density']].mean(), name='overall_mean')
+a = pd.Series(vdf[['annual_ghg_emissions','annual_operating_cost','total_annual_cost','vehicle_pc_BEV','vehicle_pc_FFV','vehicle_pc_SIDI','census_totpop','pct_rural','pop_density','efuels_area']].mean(), name='overall_mean')
 b = pd.Series(ca_vdf[['annual_ghg_emissions','annual_operating_cost','total_annual_cost','vehicle_pc_BEV','vehicle_pc_FFV','vehicle_pc_SIDI','census_totpop','pct_rural','pop_density']].mean(), name='mn_mean')
 c = pd.Series(tx_vdf[['annual_ghg_emissions','annual_operating_cost','total_annual_cost','vehicle_pc_BEV','vehicle_pc_FFV','vehicle_pc_SIDI','census_totpop','pct_rural','pop_density']].mean(), name='tx_mean')
 d = pd.Series(mn_vdf[['annual_ghg_emissions','annual_operating_cost','total_annual_cost','vehicle_pc_BEV','vehicle_pc_FFV','vehicle_pc_SIDI','census_totpop','pct_rural','pop_density']].mean(), name='ca_mean')
@@ -125,7 +125,9 @@ choose_state = st.radio("Choose a state to analyse",('California', 'Minnesota', 
 if choose_state == 'California':
     st.markdown('## California')
     # sns.regplot(ca_vdf['annual_ghg_emissions'],ca_vdf['total_vehicle_count']).set_title("CA Annual GHG emissions vs Total Vehicles")
-    sns.regplot(ca_vdf['annual_ghg_emissions'],ca_vdf['total_vehicle_count']).set_title("CA Annual GHG emissions vs Total Vehicles")
+    cal_plot = sns.regplot(ca_vdf['annual_ghg_emissions'],ca_vdf['total_vehicle_count'])
+    cal_plot.set(xlabel='Annual GHG Emissions (gCO2e)', ylabel='Total Vehicle Count (Millions)')
+    cal_plot.set_title("CA Annual GHG emissions vs Total Vehicles")
     st.pyplot()
 
     st.write('Of the 58 counties in California, every single one of them has a non-zero EV allocation, which provides adequate rationale for California to have the highest BEV allocation within this sample of states. In terms of the biofuels complement: there are no counties have a non-zero FFV allocation where BEV allocation is zero. There make sense given that there are only 4 or 6% of California\'s counties that have a non-zero FFV allocation. Again, this provides support for the preference for BEV over FFV allocation due to lower emission factors whenever a free choice is available. Even within these 21 counties, average FFV allocation account for only 2.5% compared against 89.67% BEV and 7.85% SIDI.')
@@ -141,8 +143,11 @@ if choose_state == 'California':
 
 elif choose_state == 'Minnesota':
     st.markdown('## Minnesota')
-    sns.regplot(mn_vdf['annual_ghg_emissions'],mn_vdf['total_vehicle_count']).set_title("MN Annual GHG emissions vs Total Vehicles")
+    mn_plot = sns.regplot(mn_vdf['annual_ghg_emissions'],mn_vdf['total_vehicle_count'])
+    mn_plot.set(xlabel='Annual GHG Emissions (gCO2e)', ylabel='Total Vehicle Count (Millions)')
+    mn_plot.set_title("MN Annual GHG emissions vs Total Vehicles")
     st.pyplot()
+
     st.write('Of the 87 counties in Minnesota, 42 have FFV allocations that *exceed* their corresponding BEV allocation. The prototypical description of such a county is suburban,  with an average FFV allocation of 31.5%, 60.9% SIDI and just 7.5% BEV. This result aligns with expectations within the context of Minnesota being a core market for biofuels and infrastructure within the US and within this sample.')
     
     st.write('Across Minnesota, 25 counties have no BEV infrastructure (and correspondingly no allocation). As a corollary, these counties are exclusively rural, since both urban and suburban counties have been given an EV boost to account for residential charging. Across these counties, their allocations average 20.51% FFV and 79.5% SIDI allocations. There are two counties - Waseca County and Cottonwood County - which boast over 60% FFV allocations. Of these 25 counties, 16 counties held significant FFV allocations, over 10%. Some notable counties include:')
@@ -158,7 +163,9 @@ elif choose_state == 'Minnesota':
 
 elif choose_state == 'Texas': 
     st.markdown('## Texas')
-    sns.regplot(tx_vdf['annual_ghg_emissions'],tx_vdf['total_vehicle_count']).set_title("TX Annual GHG emissions vs Total Vehicles")
+    tx_plot = sns.regplot(tx_vdf['annual_ghg_emissions'],tx_vdf['total_vehicle_count'])
+    tx_plot.set_title("TX Annual GHG emissions vs Total Vehicles")
+    tx_plot.set(xlabel='Annual GHG Emissions (gCO2e)', ylabel='Total Vehicle Count (Millions)')
     st.pyplot()
     st.write('Of the 254 counties in Texas, 123 had a non-zero BEV allocation. There are 3 counties in Texas which have FFV allocations where BEV allocations are zero, alluding to the existence of E85 infrastructure where EV infrastructure does not exist. As mentioned previously, these counties have not had an EV coverage boost due to residential charging - which is given only to suburban and urban counties - which means that these counties are rural. Only 2 of these counties - Atascosa County and Polk County - accounted for significant FFV allocations, compared with 16 with Minnesota, and none in California in the same analysis. This hints to the relatively limited FFV infrastructure in areas without BEV infrastructure.')
 

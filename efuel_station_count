@@ -1,0 +1,214 @@
+,County,State,Efuel Station Count
+0,Alameda,CA,317
+1,Alpine,CA,2
+2,Amador,CA,9
+3,Anderson,TX,1
+4,Angelina,TX,1
+5,Anoka,MN,13
+6,Aransas,TX,2
+7,Austin,TX,1
+8,Bandera,TX,1
+9,Bastrop,TX,3
+10,Bell,TX,10
+11,Beltrami,MN,3
+12,Bexar,TX,87
+13,Blanco,TX,3
+14,Blue Earth,MN,9
+15,Bowie,TX,1
+16,Brazoria,TX,14
+17,Brazos,TX,15
+18,Brown MN,MN,1
+19,Burnet,TX,1
+20,Butte,CA,20
+21,Calaveras,CA,3
+22,Cameron,TX,9
+23,Carlton,MN,4
+24,Carver,MN,2
+25,Cass MN,MN,1
+26,Childress,TX,1
+27,Chippewa,MN,1
+28,Chisago,MN,2
+29,Clay MN,MN,1
+30,Clay TX,TX,1
+31,Collin,TX,76
+32,Colorado,TX,2
+33,Colusa,CA,3
+34,Comal,TX,5
+35,Contra Costa,CA,162
+36,Cook,MN,3
+37,Coryell,TX,1
+38,Crockett,TX,2
+39,Crow Wing,MN,2
+40,Culberson,TX,2
+41,Dakota,MN,29
+42,Dallas,TX,224
+43,Del Norte,CA,6
+44,Denton,TX,32
+45,Douglas,CA,1
+46,Douglas,MN,1
+47,Eastland,TX,2
+48,Ector,TX,3
+49,El Dorado,CA,36
+50,El Paso,TX,27
+51,Ellis,TX,3
+52,Fayette,TX,3
+53,Fillmore,MN,1
+54,Fort Bend,TX,12
+55,Freeborn,MN,6
+56,Fresno,CA,116
+57,Galveston,TX,20
+58,Gillespie,TX,5
+59,Glenn,CA,2
+60,Goodhue,MN,5
+61,Grayson,TX,4
+62,Gregg,TX,3
+63,Grimes,TX,1
+64,Guadalupe,TX,4
+65,Hamilton,TX,1
+66,Hardin,TX,2
+67,Harris,TX,203
+68,Harrison,TX,1
+69,Hays,TX,14
+70,Henderson,TX,1
+71,Hennepin,MN,120
+72,Hidalgo,TX,9
+73,Hill,TX,1
+74,Hood,TX,2
+75,Hopkins,TX,1
+76,Howard,TX,1
+77,Humboldt,CA,40
+78,Hunt,TX,1
+79,Imperial,CA,2
+80,Inyo,CA,4
+81,Isanti,MN,3
+82,Jackson TX,TX,1
+83,Jasper,TX,1
+84,Jeff Davis,TX,1
+85,Jefferson,TX,8
+86,Johnson,TX,5
+87,Kandiyohi,MN,2
+88,Kendall,TX,4
+89,Kern,CA,46
+90,Kerr,TX,3
+91,Kimble,TX,2
+92,Kings,CA,19
+93,Kleberg,TX,3
+94,Lake CA,CA,3
+95,Lake MN,MN,1
+96,Lampasas,TX,2
+97,Lassen,CA,2
+98,Lee,TX,1
+99,Live Oak,TX,2
+100,Llano,TX,4
+101,Los Angeles,CA,1753
+102,Lubbock,TX,7
+103,Lyon,MN,1
+104,Madera,CA,18
+105,Madison,TX,1
+106,Marin,CA,93
+107,Mariposa,CA,7
+108,Martin MN,MN,1
+109,Matagorda,TX,2
+110,Maverick,TX,1
+111,McLennan,TX,8
+112,McLeod,MN,2
+113,Mendocino,CA,44
+114,Merced,CA,18
+115,Midland,TX,5
+116,Mille Lacs,MN,1
+117,Modoc,CA,2
+118,Mono,CA,7
+119,Monterey,CA,94
+120,Montgomery,TX,29
+121,Moore,TX,2
+122,Morrison,MN,1
+123,Mower,MN,5
+124,Nacogdoches,TX,1
+125,Napa,CA,112
+126,Navarro,TX,1
+127,Nevada,CA,16
+128,Nicollet,MN,2
+129,Nobles,MN,1
+130,Nolan,TX,2
+131,Nueces,TX,16
+132,Olmsted,MN,13
+133,Orange CA,CA,609
+134,Orange TX,TX,1
+135,Parker,TX,4
+136,Pecos,TX,2
+137,Pine,MN,4
+138,Pipestone,MN,1
+139,Placer,CA,72
+140,Plumas,CA,3
+141,Potter,TX,5
+142,Presidio,TX,1
+143,Ramsey,MN,74
+144,Randall,TX,2
+145,Reagan,TX,1
+146,Redwood,MN,2
+147,Reeves,TX,3
+148,Renville,MN,1
+149,Rice,MN,2
+150,Riverside,CA,282
+151,Rock,MN,1
+152,Rockwall,TX,6
+153,Runnels,TX,1
+154,Sacramento,CA,213
+155,San Benito,CA,7
+156,San Bernardino,CA,180
+157,San Diego,CA,551
+158,San Francisco,CA,223
+159,San Joaquin,CA,47
+160,San Luis Obispo,CA,109
+161,San Mateo,CA,281
+162,San Patricio,TX,1
+163,Santa Barbara,CA,103
+164,Santa Clara,CA,567
+165,Santa Cruz,CA,46
+166,Scott,MN,8
+167,Shasta,CA,15
+168,Sherburne,MN,3
+169,Sierra,CA,1
+170,Siskiyou,CA,11
+171,Smith,TX,7
+172,Solano,CA,67
+173,Sonoma,CA,150
+174,St. Louis,MN,18
+175,St. Louis,TX,1
+176,Stanislaus,CA,34
+177,Stearns,MN,2
+178,Steele,MN,5
+179,Stevens,MN,3
+180,Sutter,CA,2
+181,Tarrant,TX,100
+182,Taylor,TX,3
+183,Tehama,CA,5
+184,Titus,TX,1
+185,Todd,MN,1
+186,Tom Green,TX,2
+187,Travis,TX,267
+188,Trinity CA,CA,3
+189,Tulare,CA,20
+190,Tuolumne,CA,11
+191,Uvalde,TX,1
+192,Val Verde,TX,1
+193,Van Zandt,TX,1
+194,Ventura,CA,165
+195,Victoria,TX,3
+196,Wabasha,MN,2
+197,Walker,TX,4
+198,Waller,TX,2
+199,Ward,TX,1
+200,Washington MN,MN,12
+201,Washington TX,TX,3
+202,Webb,TX,2
+203,Wharton,TX,1
+204,Wheeler,TX,1
+205,Wichita,TX,3
+206,Wilbarger,TX,1
+207,Williamson,TX,39
+208,Wilson,TX,1
+209,Winona,MN,1
+210,Wright,MN,6
+211,Yolo,CA,63
+212,Yuba,CA,6

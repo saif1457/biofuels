@@ -43,6 +43,7 @@ T = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/opti
 T['total_vehicles_registered'] = T['total_vehicles_registered'].apply(lambda x: x.replace(',',''))
 T['total_vehicles_registered'] = T['total_vehicles_registered'].apply(pd.to_numeric)
 W_param = pd.read_csv('https://raw.githubusercontent.com/saif1457/biofuels/master/optimisation_data/W_county_param.csv')
+
 e85_vi = pd.read_csv('e85_vi.csv')
 efuels_vi = pd.read_csv('efuels_vi.csv')
 e85_vi = e85_vi[['STATE','NAME','CENSUSAREA','e85_area']]
@@ -51,15 +52,15 @@ efuels_vi = efuels_vi[['STATE','NAME','CENSUSAREA','efuels_area']]
 efuels_vi = efuels_vi.rename(columns={'STATE': 'state', 'NAME': 'county','CENSUSAREA':'census_area'})
 
 import feather
-readFrame = pd.read_feather('./vdf', use_threads=True)
-readFrame.sort_values(by=['State','County'],ascending=True,inplace=True)
-efuels_vi.sort_values(by=['state','county'],ascending=True,inplace=True)
-efuels_vi.reset_index(inplace=True)
+readFrame = pd.read_feather('/Users/saifbhatti/Desktop/biofuels/analysed_vdf', use_threads=True)
+efuels_vi.county = efuels_vi.county.str.replace('_',' ')
+efuels_vi = efuels_vi.merge(readFrame,left_on='county',right_on='County')
+efuels_vi = efuels_vi[['state', 'county', 'census_area_x', 'efuels_area_y']]
+efuels_vi.rename(columns={'efuels_area_y':'efuels_area','census_area_x':'census_area'},inplace=True)
+
 
 e85_vi['e85_area'] = e85_vi['e85_area'] / 100
-efuels_vi['efuels_area'] = efuels_vi['efuels_area'] / 100
-efuels_vi['efuels_area_new'] = readFrame['efuels_area']/100
-
+efuels_vi['efuels_area'] = efuels_vi['efuels_area']/100
 
 e85vi_param = e85_vi.groupby('county')['e85_area'].apply(list).to_dict()
 efuelsvi_param = efuels_vi.groupby('county')['efuels_area'].apply(list).to_dict()
